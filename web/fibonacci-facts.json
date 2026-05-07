@@ -1,0 +1,714 @@
+{
+  "description": "Fibonacci numbers F(0)..F(100) with one short fact per index, drawn from history, science, computer science, science fiction, mathematics, and culture.",
+  "phi": 1.618033988749895,
+  "count": 101,
+  "entries": [
+    {
+      "index": 0,
+      "value": "0",
+      "ratio_to_previous": null,
+      "category": "history",
+      "fact": "Brahmagupta defined arithmetic with zero in his Brahmasphutasiddhanta (628 CE) — the earliest text to treat zero as a true number."
+    },
+    {
+      "index": 1,
+      "value": "1",
+      "ratio_to_previous": null,
+      "category": "computer-science",
+      "fact": "In binary, 1 is the only nonzero digit. Every byte you've ever sent is a pattern of 1s and 0s."
+    },
+    {
+      "index": 2,
+      "value": "1",
+      "ratio_to_previous": 1.0,
+      "category": "mathematics",
+      "fact": "The repeated 1 is what makes Fibonacci self-starting: F(n)=F(n-1)+F(n-2) needs two seeds, and both happen to be 1."
+    },
+    {
+      "index": 3,
+      "value": "2",
+      "ratio_to_previous": 2.0,
+      "category": "mathematics",
+      "fact": "Two is the only even prime — every other even number is divisible by 2, so it can't be prime."
+    },
+    {
+      "index": 4,
+      "value": "3",
+      "ratio_to_previous": 1.5,
+      "category": "science",
+      "fact": "Three primary colors (RGB) generate every color on your screen by additive light mixing."
+    },
+    {
+      "index": 5,
+      "value": "5",
+      "ratio_to_previous": 1.6666666667,
+      "category": "mathematics",
+      "fact": "There are exactly five Platonic solids — proven complete by Euclid in Elements, Book XIII (~300 BCE)."
+    },
+    {
+      "index": 6,
+      "value": "8",
+      "ratio_to_previous": 1.6,
+      "category": "computer-science",
+      "fact": "A byte equals 8 bits, standardized by IBM's System/360 in 1964. Before that, 'byte' could mean 6, 7, or 9 bits."
+    },
+    {
+      "index": 7,
+      "value": "13",
+      "ratio_to_previous": 1.625,
+      "category": "computer-science",
+      "fact": "ISBN-13 replaced ISBN-10 worldwide on January 1, 2007, expanding the global book-identifier address space."
+    },
+    {
+      "index": 8,
+      "value": "21",
+      "ratio_to_previous": 1.6153846154,
+      "category": "culture",
+      "fact": "Blackjack ('21') is the world's most-played banking card game. The house edge comes from players acting before the dealer."
+    },
+    {
+      "index": 9,
+      "value": "34",
+      "ratio_to_previous": 1.619047619,
+      "category": "computer-science",
+      "fact": "Wolfram's elementary cellular automaton Rule 34 evolves to a stable striped pattern from any starting state — a 'class 2' rule."
+    },
+    {
+      "index": 10,
+      "value": "55",
+      "ratio_to_previous": 1.6176470588,
+      "category": "history",
+      "fact": "The U.S. national speed limit was set to 55 mph in 1974 during the OPEC oil crisis, via the Emergency Highway Energy Conservation Act."
+    },
+    {
+      "index": 11,
+      "value": "89",
+      "ratio_to_previous": 1.6181818182,
+      "category": "mathematics",
+      "fact": "F(11)=89 is a Fibonacci prime — and the reciprocal 1/89 = 0.01123595... encodes the Fibonacci sequence in its decimal expansion."
+    },
+    {
+      "index": 12,
+      "value": "144",
+      "ratio_to_previous": 1.6179775281,
+      "category": "history",
+      "fact": "A gross equals 144 — a dozen dozen — used in medieval and modern packaging because 12 has more divisors than 10."
+    },
+    {
+      "index": 13,
+      "value": "233",
+      "ratio_to_previous": 1.6180555556,
+      "category": "science",
+      "fact": "F(13)=233 is a Fibonacci prime, and uranium-233 is a fissile isotope bred from thorium for advanced reactor fuel cycles."
+    },
+    {
+      "index": 14,
+      "value": "377",
+      "ratio_to_previous": 1.6180257511,
+      "category": "history",
+      "fact": "The Boeing 377 Stratocruiser (1947) was a luxury double-decker airliner with a cocktail lounge on the lower deck."
+    },
+    {
+      "index": 15,
+      "value": "610",
+      "ratio_to_previous": 1.6180371353,
+      "category": "history",
+      "fact": "In 610 CE, Muhammad is said to have received his first revelation in the cave of Hira — the traditional start of Islam."
+    },
+    {
+      "index": 16,
+      "value": "987",
+      "ratio_to_previous": 1.6180327869,
+      "category": "history",
+      "fact": "In 987 CE, Hugh Capet was crowned King of the Franks, founding the Capetian dynasty that ruled France for centuries."
+    },
+    {
+      "index": 17,
+      "value": "1597",
+      "ratio_to_previous": 1.6180344478,
+      "category": "mathematics",
+      "fact": "F(17)=1597 is a Fibonacci prime — only a handful are known, and finding more is an open problem in number theory."
+    },
+    {
+      "index": 18,
+      "value": "2584",
+      "ratio_to_previous": 1.6180338134,
+      "category": "culture",
+      "fact": "Eighteen is the global age of legal majority in most countries — the moment civic identity formally begins."
+    },
+    {
+      "index": 19,
+      "value": "4181",
+      "ratio_to_previous": 1.6180340557,
+      "category": "mathematics",
+      "fact": "F(19)=4181 looks like it should be prime (its index is) but it isn't — it factors as 37 × 113, a famous Fibonacci counterexample."
+    },
+    {
+      "index": 20,
+      "value": "6765",
+      "ratio_to_previous": 1.6180339632,
+      "category": "mathematics",
+      "fact": "F(20)=6765. The next time a Fibonacci number gains a whole new digit-decade won't be for several more steps — exponential growth becomes visible here."
+    },
+    {
+      "index": 21,
+      "value": "10946",
+      "ratio_to_previous": 1.6180339985,
+      "category": "culture",
+      "fact": "21 is the U.S. legal drinking age and the magic number in blackjack. F(21)=10,946 — the smallest Fibonacci above ten thousand."
+    },
+    {
+      "index": 22,
+      "value": "17711",
+      "ratio_to_previous": 1.618033985,
+      "category": "culture",
+      "fact": "Joseph Heller's Catch-22 (1961) gave the world a name for paradoxical bureaucratic logic: rules that defeat themselves."
+    },
+    {
+      "index": 23,
+      "value": "28657",
+      "ratio_to_previous": 1.6180339902,
+      "category": "mathematics",
+      "fact": "F(23)=28,657 is a Fibonacci prime. Michael Jordan wore #23 because his older brother Larry wore #45 — half plus one, rounded up."
+    },
+    {
+      "index": 24,
+      "value": "46368",
+      "ratio_to_previous": 1.6180339882,
+      "category": "history",
+      "fact": "There are 24 hours in a day — a convention from ancient Egypt, who used 12 daytime + 12 nighttime hours that varied with the seasons."
+    },
+    {
+      "index": 25,
+      "value": "75025",
+      "ratio_to_previous": 1.618033989,
+      "category": "history",
+      "fact": "A silver jubilee marks 25 years. Queen Elizabeth II's silver jubilee in 1977 drew street parties across the Commonwealth."
+    },
+    {
+      "index": 26,
+      "value": "121393",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "The English alphabet has 26 letters; Hawaiian uses just 13 — exactly half."
+    },
+    {
+      "index": 27,
+      "value": "196418",
+      "ratio_to_previous": 1.6180339888,
+      "category": "culture",
+      "fact": "The '27 Club' is the morbid pop-culture grouping of musicians who died at 27 — Hendrix, Joplin, Morrison, Cobain, Winehouse."
+    },
+    {
+      "index": 28,
+      "value": "317811",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "The lunar cycle is ~29.5 days, but folklore and pre-modern calendars often round it to 28 — close enough to a menstrual cycle to fuel ancient symbolism."
+    },
+    {
+      "index": 29,
+      "value": "514229",
+      "ratio_to_previous": 1.6180339888,
+      "category": "science",
+      "fact": "F(29)=514,229 is a Fibonacci prime. Saturn takes ~29.5 Earth years to orbit the Sun — about one Saturnian year per human generation."
+    },
+    {
+      "index": 30,
+      "value": "832040",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "The Thirty Years' War (1618–1648) reshaped Europe and ended with the Peace of Westphalia, the basis of modern state sovereignty."
+    },
+    {
+      "index": 31,
+      "value": "1346269",
+      "ratio_to_previous": 1.6180339888,
+      "category": "mathematics",
+      "fact": "31 = 2⁵ − 1 is a Mersenne prime; Mersenne primes are the source of every known even perfect number."
+    },
+    {
+      "index": 32,
+      "value": "2178309",
+      "ratio_to_previous": 1.6180339887,
+      "category": "computer-science",
+      "fact": "32-bit computing dominated personal computers from the mid-1980s until 64-bit went mainstream around 2008."
+    },
+    {
+      "index": 33,
+      "value": "3524578",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "At 33, Alexander the Great died in Babylon (323 BCE) having conquered most of the known world from Greece to the Indus."
+    },
+    {
+      "index": 34,
+      "value": "5702887",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "Dwight D. Eisenhower was the 34th U.S. President and signed the Federal-Aid Highway Act of 1956, creating the Interstate System."
+    },
+    {
+      "index": 35,
+      "value": "9227465",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "The U.S. Constitution sets 35 as the minimum age to be President — a deliberate floor for maturity and experience."
+    },
+    {
+      "index": 36,
+      "value": "14930352",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "The film The 36th Chamber of Shaolin (1978) inspired Wu-Tang Clan's 1993 debut album Enter the Wu-Tang (36 Chambers)."
+    },
+    {
+      "index": 37,
+      "value": "24157817",
+      "ratio_to_previous": 1.6180339887,
+      "category": "computer-science",
+      "fact": "37signals (now Basecamp) popularized the 'less software' philosophy and gave the world Ruby on Rails in 2004."
+    },
+    {
+      "index": 38,
+      "value": "39088169",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "The 38th parallel divided Korea after WWII and remains the boundary between North and South to this day."
+    },
+    {
+      "index": 39,
+      "value": "63245986",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "Hitchcock's The 39 Steps (1935) pioneered the 'wrong man on the run' thriller template still copied today."
+    },
+    {
+      "index": 40,
+      "value": "102334155",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "The biblical '40 days and 40 nights' appears in the stories of Noah, Moses, and Jesus — symbolizing trial and transformation."
+    },
+    {
+      "index": 41,
+      "value": "165580141",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "George H. W. Bush, the 41st U.S. President, was the last WWII veteran to hold the office."
+    },
+    {
+      "index": 42,
+      "value": "267914296",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science-fiction",
+      "fact": "In Douglas Adams' Hitchhiker's Guide to the Galaxy, 42 is the answer to 'the Ultimate Question of Life, the Universe, and Everything.'"
+    },
+    {
+      "index": 43,
+      "value": "433494437",
+      "ratio_to_previous": 1.6180339887,
+      "category": "mathematics",
+      "fact": "F(43)=433,494,437 is a Fibonacci prime — the 9th known."
+    },
+    {
+      "index": 44,
+      "value": "701408733",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "Barack Obama, the 44th U.S. President, was the first born in Hawaii — and the first Black president of the United States."
+    },
+    {
+      "index": 45,
+      "value": "1134903170",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "The 45 RPM vinyl single, introduced by RCA in 1949, became the format of pop music for the next two decades."
+    },
+    {
+      "index": 46,
+      "value": "1836311903",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "Joe Biden, the 46th U.S. President, was the oldest person to assume the office, at age 78."
+    },
+    {
+      "index": 47,
+      "value": "2971215073",
+      "ratio_to_previous": 1.6180339887,
+      "category": "mathematics",
+      "fact": "F(47)=2,971,215,073 is a Fibonacci prime — the 10th known. Fibonacci primes get rarer as the index grows."
+    },
+    {
+      "index": 48,
+      "value": "4807526976",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "The 'Lower 48' — the contiguous U.S. states excluding Alaska and Hawaii — is American shorthand for the mainland."
+    },
+    {
+      "index": 49,
+      "value": "7778742049",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "The '49ers' rushed to California in 1849, swelling its non-Native population from ~14,000 to ~250,000 in just four years."
+    },
+    {
+      "index": 50,
+      "value": "12586269025",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "The U.S. has 50 states. A golden jubilee marks 50 years. F(50)=12,586,269,025 — Fibonacci has now passed 10 billion."
+    },
+    {
+      "index": 51,
+      "value": "20365011074",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "Area 51, a U.S. Air Force facility in Nevada, was officially acknowledged by the CIA only in 2013, ending decades of denial."
+    },
+    {
+      "index": 52,
+      "value": "32951280099",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "A standard playing-card deck has 52 cards — one for each week of the year, possibly by design."
+    },
+    {
+      "index": 53,
+      "value": "53316291173",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "Asteroid 53 Kalypso was discovered in 1858, named for the Greek nymph who held Odysseus on her island for seven years."
+    },
+    {
+      "index": 54,
+      "value": "86267571272",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "Studio 54 (1977–1980) defined the disco era of New York nightlife before its tax-evasion-driven collapse."
+    },
+    {
+      "index": 55,
+      "value": "139583862445",
+      "ratio_to_previous": 1.6180339887,
+      "category": "mathematics",
+      "fact": "F(55)=139,583,862,445. And 55 is itself a Fibonacci number — F(10) — making this F(F(10)), a doubly-Fibonacci position."
+    },
+    {
+      "index": 56,
+      "value": "225851433717",
+      "ratio_to_previous": 1.6180339887,
+      "category": "computer-science",
+      "fact": "The 56k modem (V.90 standard, 1998) was the last hurrah of dial-up before broadband took over the home internet."
+    },
+    {
+      "index": 57,
+      "value": "365435296162",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "'Heinz 57' was a marketing slogan from 1896. Heinz actually made far more than 57 products — the founder just liked the number."
+    },
+    {
+      "index": 58,
+      "value": "591286729879",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "The Voyager Golden Record (1977) carries 55 different greetings to potential extraterrestrial listeners — close to 58, the index here."
+    },
+    {
+      "index": 59,
+      "value": "956722026041",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "The 1959 Antarctic Treaty designated Antarctica as a scientific preserve and banned military activity — the Cold War's first arms-control treaty."
+    },
+    {
+      "index": 60,
+      "value": "1548008755920",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "The Babylonians used base-60, which is why we have 60 seconds, 60 minutes, and 360 degrees in a circle."
+    },
+    {
+      "index": 61,
+      "value": "2504730781961",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "Bob Dylan's Highway 61 Revisited (1965) — referencing the road from his Minnesota hometown — went electric and split the folk world."
+    },
+    {
+      "index": 62,
+      "value": "4052739537881",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "Average global ocean surface temperature is around 62°F (17°C). Small changes here drive massive shifts in climate."
+    },
+    {
+      "index": 63,
+      "value": "6557470319842",
+      "ratio_to_previous": 1.6180339887,
+      "category": "mathematics",
+      "fact": "63 = 2⁶ − 1 is a Mersenne number, but NOT a Mersenne prime — it factors as 7 × 9."
+    },
+    {
+      "index": 64,
+      "value": "10610209857723",
+      "ratio_to_previous": 1.6180339887,
+      "category": "mathematics",
+      "fact": "A chessboard has 64 squares — and the wheat-and-chessboard legend asks for 2⁶⁴−1 grains, more than humanity has ever harvested."
+    },
+    {
+      "index": 65,
+      "value": "17167680177565",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "65 mph is the most common U.S. interstate speed limit, and 65 is the typical retirement age across much of the developed world."
+    },
+    {
+      "index": 66,
+      "value": "27777890035288",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "Route 66 — the 'Mother Road' — ran 2,448 miles from Chicago to Santa Monica before being decommissioned in 1985."
+    },
+    {
+      "index": 67,
+      "value": "44945570212853",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "Comet 67P/Churyumov–Gerasimenko is where ESA's Rosetta mission landed the Philae probe in 2014 — humanity's first comet landing."
+    },
+    {
+      "index": 68,
+      "value": "72723460248141",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "The 1968 Apollo 8 mission was the first time humans orbited the Moon and saw Earth rise above another world."
+    },
+    {
+      "index": 69,
+      "value": "117669030460994",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "The Apollo 11 Moon landing happened in 1969 — Neil Armstrong's 'small step' was watched live by ~650 million people."
+    },
+    {
+      "index": 70,
+      "value": "190392490709135",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "70mm film, used for IMAX and epics like Lawrence of Arabia, captures roughly 4× the resolution of standard 35mm."
+    },
+    {
+      "index": 71,
+      "value": "308061521170129",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "Lutetium (atomic number 71) is the densest of the lanthanides and is named after Lutetia, the Roman name for Paris."
+    },
+    {
+      "index": 72,
+      "value": "498454011879264",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "In Kabbalah, the Shem HaMephorash — the 72-fold name of God — is derived from three verses of Exodus 14."
+    },
+    {
+      "index": 73,
+      "value": "806515533049393",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science-fiction",
+      "fact": "On The Big Bang Theory, Sheldon calls 73 'the best number': it's prime, its mirror 37 is prime, and 73 in binary (1001001) is a palindrome."
+    },
+    {
+      "index": 74,
+      "value": "1304969544928657",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "Asteroid 74 Galatea was discovered in 1862. In Greek myth, Galatea is the statue Pygmalion sculpted and fell in love with."
+    },
+    {
+      "index": 75,
+      "value": "2111485077978050",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "A diamond jubilee marks 75 (or sometimes 60) years — among the rarest of anniversaries to celebrate."
+    },
+    {
+      "index": 76,
+      "value": "3416454622906707",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "The 'Spirit of '76' refers to 1776 — the year of the U.S. Declaration of Independence; the bicentennial in 1976 sparked a wave of patriotic art."
+    },
+    {
+      "index": 77,
+      "value": "5527939700884757",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "77 Sunset Strip (1958–1964) was the first hour-long detective show on American TV and made Edd 'Kookie' Byrnes a teen idol."
+    },
+    {
+      "index": 78,
+      "value": "8944394323791464",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "The 78 RPM record dominated music from 1898 to the late 1950s before being replaced by the 33⅓ LP and the 45 single."
+    },
+    {
+      "index": 79,
+      "value": "14472334024676221",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "Gold has atomic number 79; its symbol Au comes from Latin aurum, meaning 'shining dawn.'"
+    },
+    {
+      "index": 80,
+      "value": "23416728348467685",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science-fiction",
+      "fact": "Jules Verne's Around the World in Eighty Days (1872) anticipated the era of global travel made possible by steamships and the Suez Canal."
+    },
+    {
+      "index": 81,
+      "value": "37889062373143906",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "81 = 3⁴, the smallest fourth power above 1; it appears in classical Chinese thought as the number of chapters in the Tao Te Ching."
+    },
+    {
+      "index": 82,
+      "value": "61305790721611591",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "The 82nd Airborne Division ('All American') jumped into Normandy on D-Day, June 6, 1944."
+    },
+    {
+      "index": 83,
+      "value": "99194853094755497",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "Bismuth (atomic number 83) was long thought to be the heaviest stable element — until 2003, when its alpha-decay half-life was measured at ~10¹⁹ years."
+    },
+    {
+      "index": 84,
+      "value": "160500643816367088",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science-fiction",
+      "fact": "George Orwell's Nineteen Eighty-Four (1949) gave us 'Big Brother,' 'doublethink,' 'thoughtcrime,' and 'Newspeak.'"
+    },
+    {
+      "index": 85,
+      "value": "259695496911122585",
+      "ratio_to_previous": 1.6180339887,
+      "category": "mathematics",
+      "fact": "At index 85, Fibonacci numbers cross 18 digits — they now exceed the global count of every grain of sand on Earth (~7.5 × 10¹⁸)."
+    },
+    {
+      "index": 86,
+      "value": "420196140727489673",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "'86' as a verb — meaning to refuse service or eject — is American diner slang from the 1920s–30s, possibly rhyming with 'nix.'"
+    },
+    {
+      "index": 87,
+      "value": "679891637638612258",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "Lincoln's Gettysburg Address opens 'Four score and seven years ago' — 87 years before 1863 was 1776, the Declaration of Independence."
+    },
+    {
+      "index": 88,
+      "value": "1100087778366101931",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "A standard piano has 88 keys — 52 white and 36 black — covering 7¼ octaves from A0 to C8."
+    },
+    {
+      "index": 89,
+      "value": "1779979416004714189",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "In 1989, the Berlin Wall fell on November 9, ending 28 years of dividing the city — and effectively the Cold War."
+    },
+    {
+      "index": 90,
+      "value": "2880067194370816120",
+      "ratio_to_previous": 1.6180339887,
+      "category": "mathematics",
+      "fact": "A right angle is 90°. The right triangle and its 3-4-5 ratio is the foundation of all surveying and navigation."
+    },
+    {
+      "index": 91,
+      "value": "4660046610375530309",
+      "ratio_to_previous": 1.6180339887,
+      "category": "mathematics",
+      "fact": "91 = 7 × 13. It looks prime but isn't — a famous 'almost prime' that fools people in mental-math tests."
+    },
+    {
+      "index": 92,
+      "value": "7540113804746346429",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "Uranium has atomic number 92, the heaviest element found in significant quantities in nature."
+    },
+    {
+      "index": 93,
+      "value": "12200160415121876738",
+      "ratio_to_previous": 1.6180339887,
+      "category": "computer-science",
+      "fact": "The 1993 release of Mosaic, the first popular graphical web browser, is when 'the Internet' became visible to non-academics."
+    },
+    {
+      "index": 94,
+      "value": "19740274219868223167",
+      "ratio_to_previous": 1.6180339887,
+      "category": "computer-science",
+      "fact": "In 1994, Linux 1.0 was released — Linus Torvalds' kernel that now runs most servers, every Android phone, and every Top500 supercomputer."
+    },
+    {
+      "index": 95,
+      "value": "31940434634990099905",
+      "ratio_to_previous": 1.6180339887,
+      "category": "history",
+      "fact": "Martin Luther's 95 Theses, posted at the Wittenberg church in 1517, lit the fuse of the Protestant Reformation."
+    },
+    {
+      "index": 96,
+      "value": "51680708854858323072",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "Curium (atomic number 96) was first synthesized in 1944 at the Berkeley Radiation Laboratory and named for Marie and Pierre Curie."
+    },
+    {
+      "index": 97,
+      "value": "83621143489848422977",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "Apple's 1997 'Think Different' campaign launched Steve Jobs' return-era branding and saved the company from near-bankruptcy."
+    },
+    {
+      "index": 98,
+      "value": "135301852344706746049",
+      "ratio_to_previous": 1.6180339887,
+      "category": "science",
+      "fact": "Normal human body temperature is 98.6°F (37°C) — a 19th-century average that varies by ~1°F across individuals and time of day."
+    },
+    {
+      "index": 99,
+      "value": "218922995834555169026",
+      "ratio_to_previous": 1.6180339887,
+      "category": "culture",
+      "fact": "Nena's '99 Luftballons' (1983) tells of party balloons mistaken for a missile attack — a Cold War parable in pop form."
+    },
+    {
+      "index": 100,
+      "value": "354224848179261915075",
+      "ratio_to_previous": 1.6180339887,
+      "category": "mathematics",
+      "fact": "F(100) = 354,224,848,179,261,915,075 — a 21-digit number. It was first computed by hand long before computers existed."
+    }
+  ]
+}

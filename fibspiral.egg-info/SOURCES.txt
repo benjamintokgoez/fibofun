@@ -1,0 +1,14 @@
+pyproject.toml
+fibspiral/__init__.py
+fibspiral/__main__.py
+fibspiral/cli.py
+fibspiral/core.py
+fibspiral/export.py
+fibspiral.egg-info/PKG-INFO
+fibspiral.egg-info/SOURCES.txt
+fibspiral.egg-info/dependency_links.txt
+fibspiral.egg-info/entry_points.txt
+fibspiral.egg-info/requires.txt
+fibspiral.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_core.py

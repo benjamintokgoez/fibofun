@@ -1,0 +1,2 @@
+[console_scripts]
+fibspiral = fibspiral.cli:main

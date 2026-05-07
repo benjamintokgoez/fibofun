@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fibonacci Spiral</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="topbar" role="banner">
+    <h1>
+      <span class="phi">φ</span> Fibonacci Spiral
+    </h1>
+    <p class="topbar-hint">Click any square to explore</p>
+    <button
+      id="sp-toggle"
+      class="toggle-btn"
+      aria-pressed="false"
+      title="Toggle Agile Story Points mode"
+    >
+      🃏 Story Points Mode
+    </button>
+  </header>
+
+  <!-- Main area -->
+  <main class="main" role="main">
+    <!-- SVG spiral -->
+    <div class="svg-container" aria-label="Interactive Fibonacci spiral">
+      <svg
+        id="spiral-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid meet"
+        role="img"
+        aria-label="Golden spiral with 12 clickable Fibonacci squares"
+      >
+        <title>Golden Spiral — 12 Fibonacci squares</title>
+      </svg>
+    </div>
+
+    <!-- Side panel -->
+    <aside id="side-panel" class="side-panel" aria-live="polite" aria-label="Square details">
+      <div class="panel-content">
+        <button id="panel-close" class="panel-close" aria-label="Close panel">✕</button>
+        <div id="panel-inner">
+          <!-- Populated by spiral.js -->
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Loading / error overlay -->
+  <div id="overlay" class="overlay" role="status">
+    <div class="overlay-inner">
+      <div class="spinner" aria-hidden="true"></div>
+      <p id="overlay-msg">Loading…</p>
+    </div>
+  </div>
+
+  <script src="spiral.js" type="module"></script>
+</body>
+</html>

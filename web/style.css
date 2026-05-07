@@ -1,0 +1,348 @@
+/* ============================================================
+   fibonacci-spiral — style.css
+   Dark theme, golden accents, responsive SVG + slide-in panel
+   ============================================================ */
+
+/* ── Custom properties ─────────────────────────────────────── */
+:root {
+  --bg:            #0d1117;
+  --surface:       #161b22;
+  --surface-hi:    #1f2937;
+  --border:        #30363d;
+  --text:          #e6edf3;
+  --text-muted:    #8b949e;
+  --gold:          #e3b341;
+  --gold-dim:      #9a7219;
+  --focus-ring:    #58a6ff;
+  --panel-w:       340px;
+  --topbar-h:      54px;
+  --radius:        8px;
+  --transition:    0.22s ease;
+}
+
+/* ── Reset ──────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Base ───────────────────────────────────────────────────── */
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+/* ── Top bar ────────────────────────────────────────────────── */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: var(--topbar-h);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1.25rem;
+}
+
+.topbar h1 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+.topbar h1 .phi {
+  font-style: italic;
+  opacity: .85;
+}
+
+.topbar-hint {
+  font-size: .8rem;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+/* ── Story-Points toggle ────────────────────────────────────── */
+.toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .35rem .9rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: .82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition),
+              border-color var(--transition);
+  white-space: nowrap;
+}
+
+.toggle-btn:hover       { border-color: var(--gold-dim); color: var(--text); }
+.toggle-btn[aria-pressed="true"] {
+  background: var(--gold);
+  color: #0d1117;
+  border-color: var(--gold);
+}
+.toggle-btn:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ── Main layout ────────────────────────────────────────────── */
+.main {
+  display: flex;
+  height: calc(100vh - var(--topbar-h));
+  overflow: hidden;
+}
+
+/* ── SVG container ──────────────────────────────────────────── */
+.svg-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+#spiral-svg {
+  width:  100%;
+  height: 100%;
+}
+
+/* ── SVG elements ───────────────────────────────────────────── */
+.spiral-square {
+  stroke: rgba(255,255,255,.12);
+  stroke-width: .4;
+  cursor: pointer;
+  transition: stroke var(--transition), stroke-width var(--transition),
+              fill-opacity var(--transition);
+  fill-opacity: .72;
+}
+
+.spiral-square:hover {
+  stroke: var(--gold);
+  stroke-width: .8;
+  fill-opacity: .92;
+}
+
+.spiral-square:focus-visible {
+  outline: none;
+  stroke: var(--focus-ring);
+  stroke-width: 1.2;
+  fill-opacity: .95;
+}
+
+.spiral-square.selected {
+  stroke: var(--gold);
+  stroke-width: 1.2;
+  fill-opacity: 1;
+}
+
+.spiral-arc {
+  fill: none;
+  stroke: var(--gold);
+  stroke-linecap: round;
+  opacity: .85;
+}
+
+.square-label {
+  fill: rgba(255,255,255,.55);
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── Side panel ─────────────────────────────────────────────── */
+.side-panel {
+  position: relative;
+  width: var(--panel-w);
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  overflow-y: auto;
+  transform: translateX(var(--panel-w));
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+
+.side-panel.open {
+  transform: translateX(0);
+}
+
+.panel-content {
+  padding: 1.25rem 1.25rem 2rem;
+  position: relative;
+}
+
+/* ── Panel close button ─────────────────────────────────────── */
+.panel-close {
+  position: absolute;
+  top: .9rem;
+  right: .9rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: .85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition), color var(--transition);
+}
+
+.panel-close:hover { background: var(--surface-hi); color: var(--text); }
+.panel-close:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ── Panel content ──────────────────────────────────────────── */
+.panel-index-badge {
+  display: inline-block;
+  margin-bottom: .75rem;
+  padding: .2rem .55rem;
+  border-radius: 4px;
+  background: var(--gold-dim);
+  color: #f5e6b8;
+  font-size: .72rem;
+  font-family: "SF Mono", monospace;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.panel-value {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--gold);
+  margin-bottom: .25rem;
+}
+
+.panel-label {
+  font-size: .78rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.panel-ratio {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1.1rem;
+  padding: .6rem .8rem;
+  border-radius: var(--radius);
+  background: var(--surface-hi);
+  font-family: "SF Mono", monospace;
+  font-size: .85rem;
+}
+
+.panel-ratio .ratio-num {
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+
+/* ── Category badge ─────────────────────────────────────────── */
+.category-badge {
+  display: inline-block;
+  margin-bottom: .9rem;
+  padding: .22rem .65rem;
+  border-radius: 20px;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+  text-transform: capitalize;
+}
+
+/* ── Fact text ──────────────────────────────────────────────── */
+.panel-fact {
+  font-size: .88rem;
+  color: var(--text);
+  line-height: 1.65;
+  border-left: 3px solid var(--gold-dim);
+  padding-left: .75rem;
+}
+
+/* ── Story-Points panel ─────────────────────────────────────── */
+.sp-size {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: .2rem;
+}
+
+.sp-heading {
+  font-size: .95rem;
+  font-weight: 600;
+  margin-bottom: .9rem;
+  color: var(--text);
+}
+
+.sp-story {
+  font-size: .86rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-style: italic;
+  border-left: 3px solid var(--gold-dim);
+  padding-left: .75rem;
+  margin-top: .5rem;
+}
+
+.sp-note {
+  margin-top: .9rem;
+  font-size: .78rem;
+  color: var(--text-muted);
+  background: var(--surface-hi);
+  padding: .55rem .75rem;
+  border-radius: var(--radius);
+}
+
+/* ── Loading overlay ────────────────────────────────────────── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: opacity .3s;
+}
+
+.overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay-inner {
+  text-align: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto .75rem;
+  border: 3px solid var(--border);
+  border-top-color: var(--gold);
+  border-radius: 50%;
+  animation: spin .75s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Responsive: collapse panel on narrow screens ───────────── */
+@media (max-width: 640px) {
+  :root { --panel-w: 100vw; }
+  .side-panel.open { position: fixed; inset: var(--topbar-h) 0 0 0; z-index: 20; }
+  .topbar-hint { display: none; }
+}

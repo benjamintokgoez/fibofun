@@ -1,0 +1,14 @@
+# Default owners for everything in the repository
+* @benjamintokgoez
+
+# Python package
+/fibspiral/ @benjamintokgoez
+
+# Tests
+/tests/ @benjamintokgoez
+
+# Web frontend
+/web/ @benjamintokgoez
+
+# CI/CD and security workflows
+/.github/ @benjamintokgoez
